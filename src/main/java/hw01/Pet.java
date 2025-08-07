@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Pet {
 
-        private Species species;
+        private String species;
         private String nickname;
         private int age;
         private int trickLevel;
