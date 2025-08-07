@@ -10,7 +10,10 @@ public class Pet {
         private int trickLevel;
         private String[] habits;
 
-        //construction 1
+        //empty constructor elave eledim 3c lazimsiz idi sildim onu
+        public Pet() {}
+
+        //construction 1 ---> bu kommentlere ehtiyac yoxdu silersen hamsini yuxaridakini da
         public Pet(Species species, String nickname, int age, int trickLevel, String[] habits) {
             this.species = species;
             this.nickname = nickname;
@@ -22,11 +25,6 @@ public class Pet {
         //construction 2
         public Pet(Species species, String nickname) {
             this.species = species;
-            this.nickname = nickname;
-        }
-
-        //construction 3
-        public Pet(String nickname) {
             this.nickname = nickname;
         }
 
@@ -71,7 +69,7 @@ public class Pet {
             this.habits = habits;
         }
 
-        //methods
+        //methods (silersen getter setters ozu de method du eslinde sadece adlari var)
         public void eat() {
             System.out.println("The dog is eating");
         }
@@ -83,6 +81,8 @@ public class Pet {
         public boolean isDirty() {
             return true;
         }
+
+        //FOUL methodu ???
 
         @Override
         public String toString() {
