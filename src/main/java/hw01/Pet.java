@@ -74,7 +74,7 @@ public class Pet {
     }
 
     public void foul() {
-        System.out.println(nickname + "made a mess");
+        System.out.println( nickname + "made a mess");
     }
 
     @Override
