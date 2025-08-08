@@ -128,7 +128,7 @@ public class Human {
                 System.out.printf("Hm... I will feed %s's %s%n", this.name, this.pet.getSpecies());
                 return true;
             } else {
-                System.out.printf("I think %s is not hungry.%n", this.name);
+                System.out.printf("I think %s is not hungry.%n", this.pet.getNickname());
                 return false;
             }
         }
