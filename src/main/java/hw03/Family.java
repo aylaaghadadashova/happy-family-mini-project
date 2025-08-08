@@ -1,4 +1,4 @@
 package hw03;
 
-public class Family {
+public class Family \{
 }
