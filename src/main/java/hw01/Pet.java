@@ -10,6 +10,8 @@ public class Pet {
     private int trickLevel;
     private String[] habits;
 
+    public Pet(){}
+
     public Pet(String species, String nickname, int age, int trickLevel, String[] habits) {
         this.species = species;
         this.nickname = nickname;
@@ -82,7 +84,7 @@ public class Pet {
                 "Nickname:" + nickname + "\n" +
                 "Age:" + age + "\n" +
                 "TrickLevel:" + trickLevel + "\n" +
-                "Habits:" + Arrays.toString(habits) + "\n}");
+                "Habits:" + Arrays.toString(habits) + "\n}\n");
 
     }
 }

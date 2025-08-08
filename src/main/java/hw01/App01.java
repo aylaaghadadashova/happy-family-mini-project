@@ -7,8 +7,8 @@ public class App01 {
         Human father = new Human("John", "Karleone", 1980);
         Human mother = new Human("Jane", "Karleone", 1981);
 
-        Pet pet1 = new Pet("dog", "Rock");
-        Pet pet2 = new Pet("cat", "Misty", 3, 80, new String{"sleep", "jump"});
+        Pet pet1 = new Pet("cat", "Misty", 3, 80, new String[]{"sleep", "jump"});
+        Pet pet2 = new Pet("dog", "Rock");
         Pet pet3 = new Pet();
 
         String[][] schedule = {
@@ -32,8 +32,8 @@ public class App01 {
         System.out.println("Pet3: " + pet3);
 
         System.out.println("\n--Greeting Pet & Describing Pet--");
-        child2.greetPet();
-        child2.describePet();
+        child1.greetPet();
+        child1.describePet();
 
         System.out.println("\n--Eat, Respond, Foul Methods for Pet--");
         pet3.eat();
