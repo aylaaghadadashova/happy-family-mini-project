@@ -76,7 +76,7 @@ public class Pet {
     }
 
     public void eat() {
-        System.out.println("The dog is eating");
+        System.out.println(nickname +" is eating");
     }
 
     public void respond() {
