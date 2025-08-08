@@ -4,7 +4,13 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Pet {
+    static {
+        System.out.println("Pet class is being loaded.");
+    }
 
+    {
+        System.out.println("Creating a new Pet object...");
+    }
     private String species;
     private String nickname;
     private int age;

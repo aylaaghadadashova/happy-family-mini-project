@@ -5,6 +5,13 @@ import java.util.Objects;
 import java.util.Random;
 
 public class Human {
+    static {
+        System.out.println("Human class is being loaded.");
+    }
+
+    {
+        System.out.println("Creating a new Human object...");
+    }
     private String name;
     private String surname;
     private int year;
@@ -115,7 +122,7 @@ public class Human {
     public boolean equals(Object object) {
         if (object == null || getClass() != object.getClass()) return false;
         Human human = (Human) object;
-        return year == human.year && iq == human.iq && Objects.equals(name, human.name) && Objects.equals(surname, human.surname) && Objects.deepEquals(schedule, human.schedule) && Objects.equals(family, human.family);
+        return year == human.year && iq == human.iq && Objects.equals(name, human.name) && Objects.equals(surname, human.surname) && Objects.deepEquals(schedule, human.schedule);
     }
 
     @Override

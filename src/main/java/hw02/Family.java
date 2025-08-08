@@ -4,6 +4,14 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Family {
+    static {
+        System.out.println("Family class is being loaded.");
+    }
+
+    {
+        System.out.println("Creating a new Family object...");
+    }
+
     private Human mother;
     private Human father;
     private Human[] children;
@@ -108,7 +116,11 @@ public class Family {
 
     }
 
-    public int  countFamily() {
+    //delete by index???
+    public void listChildren(int index) {}
+
+
+        public int  countFamily() {
         int count = 0;
         if (father != null) count++;
         if (mother != null) count++;
@@ -121,7 +133,7 @@ public class Family {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Family family = (Family) o;
-        return pet == family.pet && Objects.equals(mother, family.mother) && Objects.equals(father, family.father) && Objects.deepEquals(children, family.children);
+        return pet.equals(family.pet) && mother.equals(family.mother) && father.equals(family.father) && Objects.deepEquals(children, family.children);
     }
 
     @Override
