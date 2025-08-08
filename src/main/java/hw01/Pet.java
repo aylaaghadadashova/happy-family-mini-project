@@ -10,7 +10,8 @@ public class Pet {
     private int trickLevel;
     private String[] habits;
 
-    public Pet(){}
+    public Pet() {
+    }
 
     public Pet(String species, String nickname, int age, int trickLevel, String[] habits) {
         this.species = species;
@@ -66,16 +67,17 @@ public class Pet {
     }
 
     public void eat() {
-        System.out.println("The dog is eating");
+        System.out.println(nickname + " is eating");
     }
 
     public void respond() {
-        System.out.println("hello , i am" + nickname);
+        System.out.println("hello , i am " + nickname);
     }
 
     public void foul() {
-        System.out.println( nickname + "made a mess");
+        System.out.println(nickname + " made a mess");
     }
+
 
     @Override
     public String toString() {
